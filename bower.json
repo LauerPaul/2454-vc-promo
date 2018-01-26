@@ -1,0 +1,28 @@
+{
+  "name": "ortodonts",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Lauer_Uhrynovych Paul <pavel@lauer.com.ua>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0",
+    "jquery": "3.*",
+    "slick-carousel": "^1.8.1",
+    "modernizer": "^2.8.2"
+  },
+  "devDependencies": {
+    "hover": "^2.1.1",
+    "iCheck": "icheck#^1.0.2",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

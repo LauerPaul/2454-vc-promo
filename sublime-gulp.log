@@ -1,0 +1,144 @@
+Remember that you can report errors and get help in https://github.com/NicoSantangelo/sublime-gulp
+
+01-23-2018 15:44:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:25
+        slickSlider: bower + 'slick-carousel/slick/
+                             ^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-23-2018 15:44:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:25
+        slickSlider: bower + 'slick-carousel/slick/
+                             ^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-23-2018 15:45:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:25
+        slickSlider: bower + 'slick-carousel/slick/
+                             ^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-23-2018 16:02:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:110
+            path.js.tether_src,
+            ^^^^
+
+SyntaxError: Unexpected identifier
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-25-2018 17:32:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:151
+                .pipe(browserSync.reload({stream: true}));
+                ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-25-2018 17:32:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:151
+                .pipe(browserSync.reload({stream: true}));
+                ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-25-2018 17:33:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:151
+                .pipe(browserSync.reload({stream: true}));
+                ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+01-25-2018 17:34:
+E:\WORK\Projects\2454-vc-promo\.sublime-gulp-tmp.js:151
+                .pipe(browserSync.reload({stream: true}));
+                ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\Front-end\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
