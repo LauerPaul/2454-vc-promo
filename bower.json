@@ -1,12 +1,13 @@
 {
-  "name": "ortodonts",
+  "name": "2454-vc-promo",
   "description": "",
   "main": "gulpfile.js",
   "authors": [
-    "Lauer_Uhrynovych Paul <pavel@lauer.com.ua>"
+    "Lauer Paul"
   ],
   "license": "ISC",
   "homepage": "",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,15 +15,16 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "4.0",
-    "jquery": "3.*",
-    "slick-carousel": "^1.8.1",
-    "modernizer": "^2.8.2"
-  },
   "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "modernizer": "^2.8.2",
+    "slick-carousel": "^1.8.1",
     "hover": "^2.1.1",
     "iCheck": "icheck#^1.0.2",
-    "bootstrap-sass": "^3.3.7"
+    "tether": "^1.4.3",
+    "animate-sass": "^0.8.2",
+    "font-awesome": "^4.7.0",
+    "font-awesome-animation": "^0.1.0"
   }
 }

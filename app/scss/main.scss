@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+/* ---------------------------------------
+Copyright 2018©
+dev. Pavel Ugrynovych (Lauer)
+------------------------------------------ */
+
+/**
+* [Bootstrap]
+*/
+@import "../libs/bootstrap/scss/_functions";
+@import "include/_variables";
+@import "../libs/bootstrap/scss/bootstrap";
+/**
+* [Animate.css]
+*/
+@import "../libs/animate-sass/_animate";
+/**
+* [Hover.css]
+*/
+@import "../libs/hover/scss/hover";
+/**
+* [Font-awesome.css]
+*/
+@import "../libs/font-awesome/scss/font-awesome";
+@import "../libs/font-awesome-animation/src/_font-awesome-animation";
+// mixins
+@import "include/_mixin";
+
+/**
+* [site styles]
+*/
+@import "styles/theme";
