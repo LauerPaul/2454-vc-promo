@@ -1,4 +1,95 @@
 /* Find your soulmate */
 .findYourSoulmate {
+	padding-bottom: 15px;
 	
+	.girl-item-wrapper{
+		margin-bottom: 30px;
+		@include box-shadow(0px 0px 8px 0px rgba(0,0,0,0.1));
+		@include border-radius(4px);
+		border: none;
+		position: relative;
+		z-index: 1;
+		
+		&::before {
+			content: url(../images/webcam.png);
+			position: absolute;
+			top: -10px;
+			left: -10px;
+			z-index: 4;
+		}
+
+		&::after {
+			content: url(../images/online.png);
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			z-index: 4;
+		}
+		
+		.photo-wrapper{
+			max-height: 350px;
+			overflow: hidden;
+			position: relative;
+			@include transition(transform 0.4s);
+			
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+		}
+
+		&:hover {
+			@include box-shadow(0px 0px 20px 0px rgba(0,0,0,0.25));
+			@include transform(scale(1.02));
+			z-index: 3;
+		}
+
+		.description-wrapper {
+			
+			.info-line {
+				padding-top: 18px;
+				padding-bottom: 17px;
+				text-align: center;
+				color: rgba(31,61,77,1);
+				
+				.name {
+					font-weight: bold;
+					font-size: 18px;
+				}
+
+				.old {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.buttons-line {
+			padding: 0px 15px;
+			padding-bottom: 20px;
+			text-align: center;
+			
+			.btn {
+				&.btn-default{
+					margin-right: 12px;
+				}
+
+				.chat {
+					&::before {
+						content: url(../images/chat_icon.png);
+						display: inline-block;
+						margin-right: 5px;
+					}
+				}
+			
+				.message {
+					&::before {
+						content: url(../images/mess_icon.png);
+						display: inline-block;
+						margin-right: 5px;
+					}	
+				}
+			}
+		}
+	}
 }

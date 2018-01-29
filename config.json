@@ -21,7 +21,7 @@
 		"pug": {
 			"in": "pug/*.pug",
 			"out": "",
-			"json": ""
+			"json": "app/pug/include/elements/json/girls_list_variables.json"
 		},
 		"js": {
 			"in": "js/**/*.js",
@@ -34,7 +34,8 @@
 						"app/libs/jquery/dist/jquery.js",
 						"app/libs/tether/dist/js/tether.js",
 						"app/libs/bootstrap/dist/js/bootstrap.js",
-						"app/libs/iCheck/icheck.min.js"
+						"app/libs/iCheck/icheck.min.js",
+						"app/libs/slick-carousel/slick/slick.min.js"
 					]
 		},
 		"images": {
@@ -53,14 +54,14 @@
 	"prop" : {
 		
 		"css": {
-			"min": true,
-			"concat": true,
+			"min": false,
+			"concat": false,
 			"sourcemap": true,
 			"scss_source_copy": true,
-			"gzip": true
+			"gzip": false
 		},
 		"pug": {
-			"dataJson": false
+			"dataJson": true
 		},
 		"js": {
 			"min": true,

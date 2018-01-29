@@ -8,9 +8,9 @@
   },
   "author": "Lauer Paul",
   "license": "ISC",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/LauerPaul/2454-vc-promo.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LauerPaul/2454-vc-promo.git"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
@@ -32,6 +32,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
-    "imagemin-pngquant": "^5.0.1"
+    "imagemin-pngquant": "^5.0.1",
+    "merge-stream": "^1.0.1"
   }
 }

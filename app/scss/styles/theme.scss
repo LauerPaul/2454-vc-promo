@@ -2,6 +2,9 @@
 @import 'elements/reg_popup';
 @import "styles/sections/our_advantages";
 @import "styles/sections/find_your_soulmate";
+@import "styles/sections/we_provide";
+@import "styles/sections/they_found_love_here";
+@import "styles/sections/prices";
 
 .second-wrapper {
     position: relative;
@@ -23,7 +26,7 @@
 	margin-bottom: 40px;
 }
 
-.checkbox {
+.checkbox { 
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -91,5 +94,61 @@
 	}
 	100%{
 		color: rgba(31,61,77,0.8);
+	}
+}
+
+.btn-default {
+	background: rgba(0,135,241,1);
+	color: $white;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	padding: 10px 25px !important;
+	height: 34px !important;
+	box-sizing: border-box;
+	font-size: 11px;
+	line-height: 13px;
+	
+	&:hover {
+		background: rgba(0,120,215,1);
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+
+	&:active {
+		background: rgba(0,112,204,1);
+		@include box-shadow(inset 0px 0px 9px 0px rgba(0,0,0,.15));
+		color: rgba(255,255,255,.8);
+	}
+}
+
+.btn-info {
+	background: rgba(1,170,193,1) !important;
+	color: $white !important;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	padding: 10px 25px !important;
+	height: 34px !important;
+	box-sizing: border-box;
+	font-size: 11px;
+	line-height: 13px;
+	
+	&:hover {
+		background: rgba(2,192,217,1) !important;
+	}
+
+	&:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
+
+	&:active {
+		background: rgba(2,158,178,1) !important;
+		@include box-shadow(inset 0px 0px 9px 0px rgba(0,0,0,.15));
+		color: rgba(255,255,255,.8) !important;
 	}
 }

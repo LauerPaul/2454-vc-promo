@@ -1,4 +1,3 @@
-//- - var girls = [direction]
 section.findYourSoulmate
 	.container
 		.second-wrapper
@@ -6,5 +5,17 @@ section.findYourSoulmate
 				.col-12
 					h2.title-section Find your soulmate
 			.row
-				p.dialog=direction
-				//- include ../elements/girls_list_variables
+				each girl in girls
+					.col-md-4
+						.girl-item-wrapper
+							.photo-wrapper
+								img(src=girl.photo, alt="Photo " + girl.name )
+							.description-wrapper
+								.info-line
+									span.name= girl.name + ', '
+									span.old= girl.years + ' years'
+							.buttons-line
+								button.btn.btn-default(type="button")
+									span.chat CHAT
+								button.btn.btn-info(type="button")
+									span.message MESSSAGE

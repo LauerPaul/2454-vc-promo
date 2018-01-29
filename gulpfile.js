@@ -92,8 +92,13 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: cnf.path.dst
         },
-        notify: false
+        notify: true
     });
+});
+
+gulp.task('clear', function(){
+    cache.clearAll();
+    return console.log('clear success...');
 });
 
 /**
@@ -107,11 +112,9 @@ gulp.task('scss', ['scss_min'], function () {
                 .pipe(if_(cnf.prop.css.sourcemap, sourcemaps.init()))
                     .pipe(sass({
                         outputStyle: 'nested',
-                        precison: 3,
                         errLogToConsole: true
                     }).on('error', sass.logError))
                     .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
-                    .pipe(if_(cnf.prop.css.concat, concat('styles.сss').on('error', console.log)))
                 .pipe(if_(cnf.prop.css.sourcemap, sourcemaps.write(cnf.path.css.sourcemap)))
                 .pipe(gulp.dest(cnf.path.dst + cnf.path.css.out))
                 .pipe(if_(!cnf.prop.css.min, browserSync.reload({stream: true})));
@@ -125,12 +128,11 @@ gulp.task('scss_min', function () {
                     .pipe(if_(cnf.prop.css.sourcemap, sourcemaps.init()))
                         .pipe(sass({
                             outputStyle: 'compressed',
-                            precison: 3,
                             errLogToConsole: true
                         }).on('error', sass.logError))
                         .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
-                        .pipe(if_(cnf.prop.css.concat, concat('styles.min.сss').on('error', console.log)))
                     .pipe(if_(cnf.prop.css.sourcemap, sourcemaps.write(cnf.path.css.sourcemap)))
+                    .pipe(rename('main.min.сss'))
                     .pipe(gulp.dest(cnf.path.dst + cnf.path.css.out))
                     .pipe(browserSync.reload({stream: true}));
     }
@@ -156,7 +158,7 @@ gulp.task('scss_min_gzip', function () {
                             errLogToConsole: true
                         }).on('error', sass.logError))
                         .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
-                    .pipe(if_(cnf.prop.css.concat, concat('styles.min.сss').on('error', console.log)))
+                        .pipe(rename('main.min.сss'))
                     .pipe(gzip().on('error', console.log))
                     .pipe(gulp.dest(cnf.path.dst + cnf.path.css.gzip).on('error', console.log));
     }
@@ -172,7 +174,6 @@ gulp.task('scss_gzip', ['scss_min_gzip'], function () {
                             errLogToConsole: true
                         }).on('error', sass.logError))
                         .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
-                    .pipe(if_(cnf.prop.css.concat, concat('styles.сss').on('error', console.log)))
                     .pipe(gzip().on('error', console.log))
                     .pipe(gulp.dest(cnf.path.dst + cnf.path.css.gzip).on('error', console.log));
     }

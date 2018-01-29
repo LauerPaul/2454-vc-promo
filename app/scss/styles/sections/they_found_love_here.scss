@@ -1,0 +1,69 @@
+/* They found love here */
+.theyFound {
+	padding-bottom: 45px;
+
+	.slider-case{
+		width: 100%;
+
+		.slider-item{
+			
+			.photo {
+				width: 270px;
+				margin-right: 30px;
+				@include border-radius(4px);
+				overflow: hidden;
+				
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.text {
+				width: calc(100% - 300px);
+				
+				.line {
+					color: #333333;
+
+					.name {
+						font-weight: bold;
+						font-size: 18px;
+					}
+				}
+
+				.story {
+					padding-top: 12px;
+					color: #333333;
+					line-height: 24px;
+					
+					p {
+						margin-bottom: 0px;
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	.carousel-indicators {
+		position: static;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		
+		li {
+			background: $white;
+			border: 1px solid #5c5c5c;
+			width: 10px;
+			height: 10px;
+			margin: 0px 5px;
+			@include border-radius(50%);
+			
+			&:not(.active){
+				cursor: pointer;
+			}
+			
+			&.active {
+				background: #5c5c5c;
+			}
+		}
+	}
+}

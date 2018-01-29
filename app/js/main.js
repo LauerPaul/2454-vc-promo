@@ -1,6 +1,9 @@
 /* Main */
 $(document).ready(function(e){
     $('input[type="checkbox"]').iCheck({checkboxClass: 'checkbox'});
+    $('#theyFoundCarousel').carousel({
+        // interval: 2000
+    })
 })
 /* auth form placeholder */
 .on('focus', 'input', function(e){

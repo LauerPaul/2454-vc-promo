@@ -1,5 +1,5 @@
 { 
-	"girls": {
+	"girls": [
 		{
 			"photo": "images/girls/girl_1.jpg",
 			"name": "Irusik",
@@ -13,7 +13,7 @@
 		{
 			"photo": "images/girls/girl_3.jpg",
 			"name": "Marina",
-			"years": 30
+			"years": "30"
 		},
 		{
 			"photo": "images/girls/girl_4.jpg",
@@ -29,6 +29,6 @@
 			"photo": "images/girls/girl_6.jpg",
 			"name": "Irina124",
 			"years": "25"
-		},
-	}
+		}
+	]
 }
