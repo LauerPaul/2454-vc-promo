@@ -6,6 +6,12 @@
 	background-size: cover;
 	padding-top: 20px;
 	
+	@media (max-width: 1171px) {
+		max-height: 630px;
+		background: url(../../images/first-section-image_tablet.jpg) no-repeat left top;
+	    background-size: cover;
+	}	
+	
 	.logo-wrapper {
 		margin-bottom: 92px;
 		
@@ -27,6 +33,11 @@
 			line-height: 64px;
 			text-transform: uppercase;
 			letter-spacing: 2.5px;
+			
+			@media (max-width: 1171px) {
+				font-size: 48px;
+				line-height: inherit;
+			}
 		}
 	}
 
@@ -37,5 +48,10 @@
 		line-height: 30px;		
 		color: $white;
 		text-transform: uppercase;
+		
+		@media (max-width: 1171px) {
+			font-size: 18px;
+			line-height: 24px;
+		} 
 	}
 }

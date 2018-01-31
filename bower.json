@@ -25,6 +25,7 @@
     "tether": "^1.4.3",
     "animate-sass": "^0.8.2",
     "font-awesome": "^4.7.0",
-    "font-awesome-animation": "^0.1.0"
+    "font-awesome-animation": "^0.1.0",
+    "jScrollPane": "jscrollpane#^2.1.1"
   }
 }

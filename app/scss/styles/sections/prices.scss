@@ -1,1 +1,210 @@
 /* Prices */
+.pricesSection {
+	padding-bottom:70px;
+	
+	.title-section {
+		
+		.small {
+			font-size: 18px;
+			letter-spacing: 0.5px;
+			font-weight: bold;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		.toggle-valute {
+			font-size: 21px;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			background: #fafafa;
+			border: 1px solid #e6e6e6;
+			@include border-radius(24px);
+			position: relative;
+			width: 67px;
+			height: 28px;
+			padding: 0px 12px;
+			top: 3px;
+			display: inline-block;
+
+			.item {
+				cursor: default;
+				
+				&.active {
+					@include border-radius(50%);
+					border: none;
+					width: 40px;
+					height: 40px;
+					font-size: 26px;
+					font-weight: 700;
+					box-sizing: border-box;
+					line-height: 40px;
+					position: absolute;
+					top: -7px;
+					color: $white;
+					cursor: pointer;
+				}
+			}
+
+			.dollar {
+				color: #1f3d4d;
+				float: left;
+				
+				&.active {
+					background: #01aac1;
+					@include box-shadow(0px 0px 8px 0px rgba(0, 94, 107, 0.3));
+					left: -7px;
+				}
+			}
+
+			.euro {
+				color: #0078d7;
+				float: right;
+				
+				&.active {
+					background: #0078d7;
+					@include box-shadow(0px 0px 8px 0px rgba(0, 56, 102, 0.3));
+					right: -7px;
+				}
+			}
+		}
+	}
+
+	.wrpper-traif {
+		@include box-shadow(0px 0px 8px 0px rgba(0,0,0,.1));
+		@include border-radius(6px);
+		position: relative;
+		margin-bottom: 25px;
+
+		.header {
+			height: 80px;
+			color: white;
+			@include box-shadow(0px 0px 8px 0px rgba(0,0,0,.1));
+			@include border-radius(6px 6px 0px 0px);
+
+			&.type {
+				background: #01aac1;
+			}
+			&.type-2 {
+				background: #0078d7;
+			}
+			&.type-3 {
+				background: #41508f;
+			}
+
+			.line {
+				display: block;
+				width: 100%;
+				text-align: center;
+
+				.old {
+					font-size: 18px;
+					letter-spacing: 0.25px;
+					margin-right: 15px;
+				    text-decoration: line-through;
+				}
+
+				.current {
+					font-size: 30px;
+					letter-spacing: 0.25px;
+					font-weight: bold;
+				}
+
+				.credits {
+					font-size: 16px;
+					line-height: 18px;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	
+	&.euro {
+		.dollarValute {
+			display: none;
+		}
+	}
+	&:not(.euro) {
+		.euroValute {
+			display: none;
+		}
+	}
+
+	.wrapper-description {
+		padding-bottom: 8px;
+		
+		.line {
+			height: 62px;
+			font-size: 16px;
+			
+			.strong {
+				font-weight: bold;
+			}
+		}
+
+		.separator {
+		    border-bottom: 1px solid rgba(1,170,193,0.2);
+		    position: relative;
+		    
+		    &::after {
+		    	content: "OR";
+		    	position: absolute;
+		    	font-size: 12px;
+		    	font-weight: bold;
+		    	left: -50%;
+		    	right: -50%;
+		    	top: -50%;
+		    	bottom: -50%;
+		    	margin: auto;
+		    	width: 34px;
+		    	height: 17px;
+		    	background: $white;
+		    	text-align: center;
+		    	color: rgba(31,61,77,0.2);
+		    }
+		}
+	}
+
+	.payments {
+		padding-top: 15px;
+		padding-bottom: 30px;
+		text-align: center;
+				
+		.payment-case {
+			padding-top: 30px;
+			display: inline-block;
+			max-width: 215px;
+			width: 100%;
+
+			.image {
+				height: 55px;
+				padding-bottom: 25px;
+				text-align: center;
+				
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.name {
+				text-align: center;
+				color: #41508f;
+				font-size: 20px;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 5px;
+				
+				&.green {
+					color: #00703c;
+				}
+
+				&.blue {
+					color: #2095d2;
+				}
+			}
+
+			.description {
+				text-align: center;
+			}
+		}
+	}
+}

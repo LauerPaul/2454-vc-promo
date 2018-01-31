@@ -8,14 +8,14 @@ section.findYourSoulmate
 				each girl in girls
 					.col-md-4
 						.girl-item-wrapper
-							.photo-wrapper
+							.photo-wrapper(onclick="popup.show('#reg')")
 								img(src=girl.photo, alt="Photo " + girl.name )
 							.description-wrapper
 								.info-line
 									span.name= girl.name + ', '
 									span.old= girl.years + ' years'
 							.buttons-line
-								button.btn.btn-default(type="button")
+								button.btn.btn-default(type="button", onclick="popup.show('#reg')")
 									span.chat CHAT
-								button.btn.btn-info(type="button")
+								button.btn.btn-info(type="button", onclick="popup.show('#reg')")
 									span.message MESSSAGE

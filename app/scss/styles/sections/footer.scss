@@ -1,0 +1,55 @@
+/* Footer */
+.footer {
+	background: url(../images/footer-image.jpg) no-repeat center top;
+	background-size: cover;
+	height: 100vh;
+	min-height: 630px;
+	
+	.wrapper {
+		padding-top: 20px;
+		height: calc(100% - 40px);
+		
+		.title-section {
+			color: $white;
+			font-weight: 300;
+			font-size: 48px;
+			line-height: 26px;
+			letter-spacing: 0.5px;
+		}
+
+		.btn {
+			width: 250px;
+			height: 50px !important;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 26px;
+			background: #44b7e2;
+			@include border-radius(24px);
+			
+			&:hover {
+				background: #0078d7;
+			}
+		}
+	}
+
+	footer {
+		height: 40px;
+		width: 100%;
+		background: rgba(255,255,255,0.1);
+		color: rgba(255,255,255,.5);
+		line-height: 40px;
+		
+		a {
+			text-decoration: underline;
+			outline: none;
+			color: rgba(255,255,255,.5);
+			line-height: 40px;
+			margin-right: 5px;
+			position: relative;
+			
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

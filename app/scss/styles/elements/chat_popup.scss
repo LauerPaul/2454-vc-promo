@@ -1,0 +1,127 @@
+/* Chat popup */
+.chat-poup-wrapper {
+	position: fixed;
+	left: calc(50% + 1170px / 2 - 270px);
+	width: 270px;
+	background: $white;
+	@include border-radius(6px);
+	@include box-shadow(0px 4px 10px 0px rgba(0,0,0,0.1));
+    z-index: 1000;
+    cursor: default;
+	bottom: -300px;
+	@include transition(bottom 0.6s);
+    
+    &.open {
+		bottom: 20px;
+ 	}
+	
+	.popupTitle {
+		padding-top: 26px;
+		height: 54px;
+		background: #01aac1;
+		color: $white;
+		text-transform: uppercase;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 18px;
+		font-weight: normal;
+		@include border-radius(6px 6px 0 0);
+	}
+
+	.popupBody {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		
+		.photo {
+			float: left;
+			width: 125px;
+			padding-right: 15px;
+			
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.right-column {
+			float: right;
+			width: calc(100% - 125px);
+			
+			.name {
+				width: 100%;
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+
+			.age {
+				width: 100%;
+				font-size: 12px;
+				line-height: 12px;
+				margin-bottom: 10px;
+			}
+
+			.message {
+				width: 100%;
+				max-width: 100%;
+				font-size: 12px;
+				border: 1px solid #b0bec5;
+				@include border-radius(4px);
+				margin-bottom: 10px;
+				padding: 3px 5px;
+				letter-spacing: -0.1px;
+				line-height: 14px;
+			}
+
+			.btn {
+				width: 100%;
+				font-size: 12px;
+				font-weight: 600;
+				height: 28px !important;
+				padding: 5px !important;
+				margin-bottom: 8px;
+			}
+
+			.dont {
+				font-size: 10px;
+				text-decoration: dashed;
+				font-weight: 700;
+				border-bottom: 1px dashed;
+				line-height: 11px;
+				// color: #b7bcbf;
+				cursor: pointer;
+				
+				&:hover {
+					border-color: transparent;
+				}
+			}
+		}
+
+		.footer-popup {
+			border-top: 1px solid #b7bcbf;
+			margin-top: 10px;
+			padding: 10px 0;
+			font-size: 13px;
+			
+			> span {
+				padding-top: 4px;
+				display: inline-block;
+				letter-spacing: -0.1px;
+				word-cpacing: -0.1px;
+			}
+			
+			.btn {
+				float: right;
+				font-size: 11px;
+				color: $white;
+				background: #d8dde1;
+				cursor: default;
+				height: 27px;
+				width: 85px;
+				outline: none !important;
+				box-shadow: none !important;
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-.popupReg-wrapper
+.popupReg-wrapper#fix
 	form(action="")
 		.popupTitle Free Sign up
 		.popupBody
@@ -14,5 +14,5 @@
 				label
 					input(type="checkbox", name="agree")
 					|I agree with
-				a(href="#") Terms and Conditions
+				a(onclick="popup.show('#terms');popup.chatPause();") Terms and Conditions
 			button.btn.btn-primary() Sign up

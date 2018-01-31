@@ -56,10 +56,17 @@
 				.name {
 					font-weight: bold;
 					font-size: 18px;
+					
+					@media (max-width: 1171px) {
+						font-size: 14px;
+					}
 				}
 
 				.old {
 					font-size: 14px;
+					@media (max-width: 1171px) {
+						font-size: 11px;
+					}
 				}
 			}
 		}
@@ -72,6 +79,17 @@
 			.btn {
 				&.btn-default{
 					margin-right: 12px;
+					
+					@media (max-width: 1171px) {
+						width: 80px !important;
+						margin-right: 10px;
+					}
+				}
+				@media (max-width: 1171px) {
+					width: 100px !important;
+					padding: 7px 20px !important;
+					height: 27px !important;
+					font-size: 8.5px !important;
 				}
 
 				.chat {

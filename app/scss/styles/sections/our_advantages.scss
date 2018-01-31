@@ -55,6 +55,10 @@
 			font-size: 16px;
 			letter-spacing: 0.25px;
 			font-weight: 600;
+			
+			@media (max-width: 1171px) {
+				font-size: 13px;
+			}
 		}
 
 		.title {
@@ -62,12 +66,21 @@
 			font-weight: bold;
 			color: rgba(31,61,77,1);
 			margin-bottom: 5px;
+			
+			@media (max-width: 1171px) {
+				font-size: 13.2px;
+			}
 		}
 
 		.text {
 			font-size: 12.5px;
 			color: rgba(31,61,77,1);
 			line-height: 17px;
+			
+			@media (max-width: 1171px) {
+				font-size: 11px;
+				line-height: 14px;
+			}
 		}
 
 	}

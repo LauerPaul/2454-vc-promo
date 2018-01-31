@@ -1,9 +1,9 @@
 /* Main */
 $(document).ready(function(e){
     $('input[type="checkbox"]').iCheck({checkboxClass: 'checkbox'});
-    $('#theyFoundCarousel').carousel({
-        // interval: 2000
-    })
+    $('#theyFoundCarousel').carousel({});
+    popup.init();
+    popup.chat();
 })
 /* auth form placeholder */
 .on('focus', 'input', function(e){
@@ -47,4 +47,15 @@ $(document).ready(function(e){
         value = $(this).val(),
         form = $(this).parents('form');
         regForm.submit(form, type);
+})
+/* Valute toggle */
+.on('click', '#valuteToggle .item.active', function(){
+    if($(this).hasClass('euro')) {
+        $('section.pricesSection').addClass('euro');
+    }
+    else {
+        $('section.pricesSection').removeClass('euro');
+    }
+    $('#valuteToggle .item').addClass('active');
+    $(this).removeClass('active');
 });

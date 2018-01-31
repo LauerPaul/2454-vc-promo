@@ -1,0 +1,43 @@
+.wrapper-popup-shawl
+	.popupWrapper#terms
+		.popup-header Terms of use
+			span.close(onclick="popup.hide();popup.chat();")
+		.scroll-pane.popup-content
+			.wrapper
+				p This Agreement establishes the legally binding terms of your use of the Services provided by Victiruyaclub.com. By completing the subscription process you are indicating that you agree to be bound by all of the terms of this Agreement. If you do not agree to this Agreement, please do not register for the site victoriyaclub.com. This Agreement is subject to change at any time, and changes are effective upon them being posted on the <a href="https://victoriyaclub.com/" target="_blank">www.victoriyaclub.com</a> (hereafter referred to as the Site). You, as a member of the Site will receive a notifications of all the changes in the Agreement. Visitors can see the changes on this page. We reserve the right at any time to modify or amend the terms of this Agreement, modify content, functionality of the Site, pricing, or to change / charge any fees for using the Site and the Services. Your use of the Site from the date of introduction of amendments and additions deemed your consent to such changes. If you do not agree with any amendments or changes in this Agreement, please do not use the Site. You can track the changes on this page. This agreement includes Privacy Policy, Refund Policy, a subscription to the site notifications, and periodic services and promotions.
+				p
+					span.strong 1.Eligibility and General Restrictions<br>
+					|By using or viewing the site, you represent and warrant that:<br>
+					|1.1 You are at least 18 years of age;<br>
+					|1.2 You are interested in finding a girl-friend from Ukraine, Russia or other countries.<br>
+					|1.3 It is lawful for you to view the type of content provided by Victoriyaclub.com where you are viewing the site;<br>
+					|You may not access the Site or utilize our Services:<br>
+					|1.5 If you are a convicted sex offender;<br>
+					|1.6 If you have a felony conviction or the equivalent in any jurisdiction;<br>
+					|1.7 If you have been convicted of any crime of moral turpitude; or<br>
+					|1.8 If you are not a natural person utilizing our Services solely for your own personal use and in good faith<br>
+					|1.9 You will not breach any of the terms and conditions of this agreement;
+	.popupWrapper#reg
+		.popup-header
+			span.close(onclick="popup.hide()")
+		.popup-content
+			.wrapper
+				.popupReg-wrapper
+					form(action="")
+						.popupTitle Free Sign up
+						.popupBody
+							.input-wrapper
+								label
+									span.title Name
+									input.title-animate(type="text", name="name", placeholder="Name", data-min-length="3")
+							.input-wrapper
+								label
+									span.title Email
+									input.title-animate(type="text", name="mail", placeholder="Email")
+							.agree-line
+								label
+									input(type="checkbox", name="agree")
+									|I agree with
+								a(onclick="popup.show('#terms')") Terms and Conditions
+							button.btn.btn-primary() Sign up
+				.clearfix
